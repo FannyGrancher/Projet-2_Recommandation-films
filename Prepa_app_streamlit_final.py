@@ -98,8 +98,8 @@ def onglet0():
     st.markdown("<p class='big-font'>CINETFLIX A L'AIR DU DIGITAL</p>", unsafe_allow_html=True)
     # Sous-titre
     st.markdown("<p class='medium-font'>Le cinéma Cinetflix passe le cap du numérique !!!</p>", unsafe_allow_html=True)
-    old_film = "https://drive.google.com/uc?export=view&id=1UofoYQzuXI_-XA01VxtnDkrNUGi0IYBr"
-    url2 = 'https://drive.google.com/uc?export=view&id=1e57cwl_8Pv_733qiClKvLpF_QVA2FvZP'
+    old_film = "https://drive.google.com/uc?export=view&id=1TzVXzbHXZioRthuqZho4XGzKf8XfUxld"
+    url2 = 'https://drive.google.com/uc?export=view&id=1uhLaE4Ir5kWlptamCW6yngixZXvX2sHH'
     st.image(old_film, width=700)
     st.markdown('<p class="small-font">Situé dans la Creuse, Cinetflix franchit une nouvelle étape  technologique. Mandaté par Cinetflix, CineHackers vous propose une application de recommandation de films ainsi que quelques indicateurs sur la base de données mise à disposition.</p>', unsafe_allow_html=True)
     
@@ -600,7 +600,7 @@ def translate_text(text):
     
     
 def main():
-    url2 = 'https://drive.google.com/uc?export=view&id=1e57cwl_8Pv_733qiClKvLpF_QVA2FvZP'
+    url2 = 'https://drive.google.com/uc?export=view&id=1uhLaE4Ir5kWlptamCW6yngixZXvX2sHH'
     st.sidebar.image(url2)
 
     st.sidebar.title("Navigation")
