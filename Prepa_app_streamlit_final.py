@@ -98,9 +98,10 @@ def onglet0():
     st.markdown("<p class='big-font'>CINETFLIX A L'AIR DU DIGITAL</p>", unsafe_allow_html=True)
     # Sous-titre
     st.markdown("<p class='medium-font'>Le cinéma Cinetflix passe le cap du numérique !!!</p>", unsafe_allow_html=True)
-    old_film = "https://drive.google.com/uc?export=view&id=1TzVXzbHXZioRthuqZho4XGzKf8XfUxld"
-    url2 = 'https://drive.google.com/uc?export=view&id=1uhLaE4Ir5kWlptamCW6yngixZXvX2sHH'
-    st.image(old_film, width=700)
+    #old_film = "https://drive.google.com/uc?export=view&id=1TzVXzbHXZioRthuqZho4XGzKf8XfUxld"
+    #url2 = 'https://drive.google.com/uc?export=view&id=1uhLaE4Ir5kWlptamCW6yngixZXvX2sHH'
+    #st.image(old_film, width=700)
+    st.image('transition.jpg', width=700)
     st.markdown('<p class="small-font">Situé dans la Creuse, Cinetflix franchit une nouvelle étape  technologique. Mandaté par Cinetflix, CineHackers vous propose une application de recommandation de films ainsi que quelques indicateurs sur la base de données mise à disposition.</p>', unsafe_allow_html=True)
     
     # Colonne pour texte et image secondaire
@@ -108,7 +109,8 @@ def onglet0():
     with col1:
         st.markdown('<p class="small-font"> En effet le cinéma Cinetflix voyant ses bénéfices chuter surtout après la crise du COVID, à décider de faire peau neuve et d’essayer de relancer la machine. Avec un nouveau site internet flambant neuf qui se veut accessible et surtout innovant. Pour cela il a fait appel à une équipe de Data Analyst pour créer une application de recommandations de films qui rejoindra le site internet. “Nous sommes partis de la base de données du site de présentation de films IMDB contenant plusieurs millions de films et de séries. Nous avons appliqué un EDA (ndlr : nettoyage de données : par exemple retrait des valeurs manquantes, vérification de la pertinence des données, ect …)” Explique Aloïs Brault, membre des CineHackers. “Cela a permis dans un premier temps d’obtenir une base de données de soixante dix-sept milles films.” “Nous avons, dans une premier temps,  fait le choix de ne proposer uniquement que des films disponibles en français.” Explique Fanny Grancher. </p>', unsafe_allow_html=True)
     with col2:
-        st.image(url2, width=350)
+        #st.image(url2, width=350)
+        st.image('cinehackers.png', width=350)
         st.markdown('<p class="small-font">  “Ensuite nous avons dû prendre des partis pris pour épurer encore la base de donnée pour pouvoir faire tourner notre algorithme de recommandation.” Explique Thibault Quaghebeur. “Nous avons donc décidé de vous proposer une recommandation de films uniquement compris entre 60 et 240min. En deuxième parti pris nous avons limité l’historique des films à l’année 1977, sortie du premier film Star Wars.” “Nous avons également utilisé le système de notation de la base de données d’IMDB pour ne proposer que des films ayant de bons retours.” Explique Bruno Gilbert. </p>', unsafe_allow_html=True)
 
 
@@ -600,8 +602,9 @@ def translate_text(text):
     
     
 def main():
-    url2 = 'https://drive.google.com/uc?export=view&id=1uhLaE4Ir5kWlptamCW6yngixZXvX2sHH'
-    st.sidebar.image(url2)
+    #url2 = 'https://drive.google.com/uc?export=view&id=1uhLaE4Ir5kWlptamCW6yngixZXvX2sHH'
+    #st.sidebar.image(url2)
+    st.sidebar.image('cinehackers.png')
 
     st.sidebar.title("Navigation")
     onglet_selectionne = st.sidebar.selectbox("Sélectionner un onglet", ["CINETFLIX A L'AIR DU DIGITAL","Informations sur les films", "Système de recommandations"])
